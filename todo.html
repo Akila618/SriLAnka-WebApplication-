@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <style>
+        body{
+            margin: 100px;
+            padding: 20px;
+            align-items: center;
+            text-align: center;
+            background-image: url(http://lava360.com/wp-content/uploads/2014/01/Classic-Background-Images-For-Wordpress-Blogs-35.jpg);
+        }
+        h1{
+            text-shadow: 1px 0.5px rgb(190, 14, 14);
+            color: bisque;
+        }
+        #app{
+            z-index: 10;
+            background-color: rgb(99, 97, 97, 0.7);
+        }
+
+        li{
+            font-family: cursive;
+            font-size: x-large;
+            color: white;
+            text-shadow: 1px 1px rgb(20, 16, 16);
+        }
+
+        button{
+            padding: 2px;
+            margin: 2px;
+        }
+
+        h3{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            color: white;
+            text-shadow: 1px 1px rgb(20, 16, 16);
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <h3><a href="projectOUSL.html" style="text-decoration: none;">Home</a></h3>
+    <h1>To Do List</h1>
+    <div id="app">
+        <ol>
+            <li v-for="item in items"> {{item}} </li>
+        </ol>
+        <input id="input" type="text" v-model="newItem">
+        <button @click = "addItem">Add a task</button>
+        <button type=button @click="remove" >Clear</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        let app = Vue.createApp({
+            data: function(){
+                return{
+                    items: ['This is your first task!']
+                }
+            },
+
+            methods: {
+                addItem() {
+                    this.items.push(this.newItem);
+                    this.newItem = '';
+                },
+                remove() {
+                    this.items.pop(this.newItem);
+                    this.newItem = '';
+                }
+            }
+        })
+        app.mount('#app')
+    </script>
+</body>
+</html>

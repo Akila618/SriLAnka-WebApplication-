@@ -1,0 +1,13 @@
+ul.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(9, 28, 46, 0.8);
+    border-style: ridge;
+    border-radius: 5px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1; 
+    z-index: 3;
+  }

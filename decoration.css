@@ -1,0 +1,113 @@
+body{
+    background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-11-full.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navigation{
+    align-items: center;
+    text-align: center;
+}
+.navigation a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0.5px 1px whitesmoke;
+}
+h3{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+.describe{
+    font-family: cursive;
+    text-align: center;
+    font-size: large;
+    text-shadow: 0.5px 0.5px rgb(155, 152, 151);
+}
+.photo p{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+.pic{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.photo{
+    padding: 5px;
+    padding-top: 10px;
+    align-items: center;
+}
+.photo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-style: groove;
+    filter: drop-shadow(10px 10px 10px green);
+}
+
+.hotels p{
+    font-size: larger;
+    padding-left: 9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.hotels img{
+    border-style: groove;
+    border-radius: 50%;
+}
+.hotels{
+    padding-top: 5em;
+    margin: 2em;
+    padding-bottom: 10px;
+    filter: drop-shadow(10px 10px 10px green);
+}
+
+footer a{
+    font-size: medium;
+    padding: 10px;
+    text-decoration: none;
+    font-size: large;
+}
+
+footer li{
+    list-style: none;
+    text-align: center;
+}
+.map{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-style: double;
+    filter: drop-shadow(10px 10px 10px rgb(14, 37, 14));
+}
+
+footer{
+    background-color: rgb(78, 15, 15, 0.8);
+}
+footer li{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+footer ul{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.foot a:hover{
+    background-color:  rgb(193, 243, 174,0.5);
+    text-shadow: 0.6px 0.6px#E0E0E0;
+}
+
+.footer a{
+    color: aquamarine;
+    text-shadow: 0.5px 0.5px darkgreen;
+}
